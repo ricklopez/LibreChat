@@ -1,0 +1,154 @@
+# File: client/src/hooks/Conversations/useExportConversation.ts
+
+# 1. Purpose
+**File Type:** TS (Custom React hook)
+
+**What this file represents:**
+This file is a custom react hook located at `client/src/hooks/Conversations/useExportConversation.ts`.
+
+**Primary exports:** 1 exported element(s)
+- function
+
+**File size:** 11,267 bytes
+
+
+# 2. Domain Role
+**Domain:** Chat & Conversation Management
+
+**Business relevance:**
+This file is part of the Chat & Conversation Management domain within the LibreChat application.
+
+
+
+# 3. Public API (FULL DETAIL)
+### Exported Functions
+
+- `function()` — default export
+
+
+
+# 4. Internal Structure
+### Internal Functions (9)
+
+- `useExportConversation()`
+- `getMessageText()`
+- `formatText()`
+- `exportScreenshot()`
+- `exportCSV()`
+- `exportMarkdown()`
+- `exportText()`
+- `exportJSON()`
+- `exportConversation()`
+
+### Architectural Patterns
+
+- React Hooks pattern
+- React Query data fetching
+
+
+
+# 5. Internal Behavior & Data Flow
+### Data Flow Steps
+
+1. **Input:** Function parameters
+2. **Transformations:** Data processing logic
+3. **External calls:** Dependent modules
+4. **Output:** Return value or side effects
+
+
+# 6. Relationships & Collaboration
+### Imported Dependencies (9)
+
+**NPM Packages:**
+- `downloadjs`
+- `react`
+- `react-router-dom`
+- `export-from-json`
+- `@tanstack/react-query`
+- `librechat-data-provider`
+
+**Aliased Imports:**
+- `~/hooks/Messages/useBuildMessageTree`
+- `~/hooks/ScreenshotContext`
+- `~/utils`
+
+
+
+# 7. Database Interaction Mapping
+**No direct database interaction.**
+
+
+# 8. UI Behavior (if applicable)
+**No UI behavior.** (Not a UI component)
+
+
+# 9. Key Logic Snippets
+**Key logic excerpts:**
+
+**Snippet 1:**
+```typescript
+if (format === 'text') {
+        return `>> ${sender
+```
+
+**Snippet 2:**
+```typescript
+const type = content[ContentTypes.TOOL_CALL].type;
+
+      if (type === ToolCallTypes.CODE_INTERPRETER) {
+        // CODE_INTERPRETER
+        const toolCall = content[ContentTypes.TOOL_CALL];
+        const code_interpreter = toolCall[ToolCallTypes.CODE_INTERPRETER];
+        return ['Code Interpreter'
+```
+
+**Snippet 3:**
+```typescript
+// IMAGE_GENERATION
+        const toolCall = content[ContentTypes.TOOL_CALL];
+        return ['Tool', JSON.stringify(toolCall)];
+```
+
+
+
+# 10. Architectural Concerns
+**Error Handling:** Uses try-catch blocks
+**Async Behavior:** Asynchronous operations present
+**Performance:** Optimized with memoization
+
+
+# 11. Migration Mapping (Legacy → Modern)
+### Target Location in Modern System
+
+**Frontend:** Frontend code
+
+
+# 12. Migration Concerns & Recommendations
+- Contains complex conditional logic that may need review
+
+
+# 13. Dependencies
+### dependsOn (9)
+
+- `downloadjs`
+- `react`
+- `react-router-dom`
+- `export-from-json`
+- `@tanstack/react-query`
+- `librechat-data-provider`
+- `~/hooks/Messages/useBuildMessageTree`
+- `~/hooks/ScreenshotContext`
+- `~/utils`
+
+
+
+# 14. Tags
+```
+- typescript
+- react-hook
+- conversation-management
+- application-code
+- librechat
+- source-file
+```
+

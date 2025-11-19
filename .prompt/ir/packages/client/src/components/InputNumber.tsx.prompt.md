@@ -1,0 +1,105 @@
+# File: packages/client/src/components/InputNumber.tsx
+
+# 1. Purpose
+**File Type:** TSX (UI component)
+
+**What this file represents:**
+This file is a ui component located at `packages/client/src/components/InputNumber.tsx`.
+
+**Documentation:** as React from 'react';
+
+
+**File size:** 1,542 bytes
+
+
+# 2. Domain Role
+**Domain:** Application Logic
+
+**Business relevance:**
+This file is part of the Application Logic domain within the LibreChat application.
+
+**Role:** User interface presentation
+- Renders UI elements for user interaction
+- Manages component-level state
+- Handles user events and input
+
+
+# 3. Public API (FULL DETAIL)
+*No public API exports detected.*
+
+
+# 4. Internal Structure
+*No significant internal structure detected.*
+
+
+# 5. Internal Behavior & Data Flow
+### Data Flow Steps
+
+1. **Input:** Props passed from parent component
+2. **Transformations:** Component state updates via hooks
+3. **External calls:** API calls via React Query hooks
+4. **Output:** Rendered JSX with event handlers
+
+
+# 6. Relationships & Collaboration
+### Imported Dependencies (5)
+
+**NPM Packages:**
+- `react`
+- `react-number-format`
+- `rc-input-number`
+- `rc-input-number`
+
+**Aliased Imports:**
+- `~/utils`
+
+
+
+# 7. Database Interaction Mapping
+**No direct database interaction.**
+
+
+# 8. UI Behavior (if applicable)
+**UI Component:** React component
+
+
+
+# 9. Key Logic Snippets
+*No significant logic snippets extracted. See full source file for implementation details.*
+
+
+# 10. Architectural Concerns
+**Logging:** Contains logging statements
+
+
+# 11. Migration Mapping (Legacy → Modern)
+### Target Location in Modern System
+
+**Frontend:** UI component
+- Component: `InputNumber`
+
+
+# 12. Migration Concerns & Recommendations
+- Contains TODO/FIXME comments indicating technical debt
+
+
+# 13. Dependencies
+### dependsOn (5)
+
+- `react`
+- `react-number-format`
+- `rc-input-number`
+- `rc-input-number`
+- `~/utils`
+
+
+
+# 14. Tags
+```
+- typescript
+- ui-component
+- application-code
+- librechat
+- source-file
+```
+
